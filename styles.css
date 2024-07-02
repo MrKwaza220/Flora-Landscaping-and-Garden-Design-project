@@ -217,7 +217,7 @@ body{
   transform: scale(1.1);
 }
 
-/***What we do***/
+/**********What we do*********/
 .service-section {
   margin-top: 110px
 }
@@ -249,8 +249,9 @@ body{
   top: 50%;
   right: 0;
 }
+
 .planning {
-  padding: 80px;
+  padding: 40px;
 }
 .planning h1 {
   font-size: 28px;
@@ -265,7 +266,7 @@ body{
   margin-top: 40px;
 }
 .cards {
-  width: 280px;
+  width: 250px;
   height: 350px;
   background-color: white;
   padding: 10px;
@@ -291,7 +292,7 @@ body{
   margin-top: 10px;
 }
 .implement {
-  margin: 0 80px 0 80px;
+  margin: 0 40px 0 40px;
 }
 .implement h1 {
   font-size: 28px;
@@ -307,27 +308,8 @@ body{
   font-weight: 400px;
   margin-top: 8px;
 }
-.cards-implem1 {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 40px;
-}
-.card2 {
-  width: 280px;
-  height: 230px;
-  background-color: white;
-  border-radius: 5px;
-}
-.card2 img {
-  width: 100%;
-  height: 230px;
-  border-radius: 5px;
-  object-fit: cover;
-}
 .maintanance {
-  margin: 80px 80px 0 80px;
+  margin: 40px 40px 0 40px;
 }
 .maintanance h1 {
   font-size: 28px;
@@ -343,25 +325,10 @@ body{
   font-weight: 400px;
   margin-top: 8px;
 }
-.cards-maintain {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 40px;
-}
-.card3 {
-  width: 280px;
-  height: 230px;
-  background-color: white;
-  border-radius: 5px;
-}
-.card3 img {
-  width: 100%;
-  height: 230px;
-  border-radius: 5px;
-  object-fit: cover;
-}
+
+
+
+
 /******************Our Services*********************/
 .serv-content {
   width: 100%;
