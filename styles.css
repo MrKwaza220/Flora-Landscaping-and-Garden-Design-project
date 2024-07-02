@@ -72,7 +72,7 @@ body{
 }
 .nav ul li a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   color: white;
   transition: 1s ease;
@@ -727,17 +727,18 @@ textarea:valid ~ label {
   background: #008a20;
   margin-top: 100px;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
 }
 .address {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   color: white;
   margin-left: 80px;
 }
 .call {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   color: white;
   margin-left: 100px;
@@ -750,7 +751,7 @@ textarea:valid ~ label {
   margin-left: 100px;
 }
 .follow p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   color: white;
 }
@@ -767,8 +768,7 @@ textarea:valid ~ label {
 }
 
 /*Adjustments for small screens*/
-@media screen and (max-width: 768px) {
-  /*Navigation*/
+@media screen and (max-width: 1050px){
   .nav-links {
     display: none;
     flex-direction: column;
@@ -776,7 +776,7 @@ textarea:valid ~ label {
     background-color: #008a20;
     position: fixed;
     top: 110px;
-    right: -40px;
+    right: 0px;
     padding: 0;
     margin: 0;
     transition: 0.5s;
@@ -811,6 +811,9 @@ textarea:valid ~ label {
     cursor: pointer;
     margin-top: 10px;
   }
+}
+@media screen and (max-width: 768px) {
+  /*Navigation*/
 
 /*about*/
 
@@ -925,7 +928,9 @@ textarea:valid ~ label {
   flex-direction: column;
   align-items: flex-start;
 }
-
+.footer-container{
+  padding: 20px;
+}
 .address, .call, .follow {
   margin: 10px 0;
   flex: 1 1 auto;
@@ -941,6 +946,9 @@ textarea:valid ~ label {
 }
 
 @media screen and (max-width: 580px){
+  .logo {
+    margin-left: -0px;
+  }
   .about-section{
     height: 57rem;
   }
@@ -995,6 +1003,9 @@ textarea:valid ~ label {
 
 
 @media screen and (width: 425px){
+  .logo {
+    margin-left: -10px;
+  }
   .infor{
     flex-direction: column;
     width: 100%;
@@ -1004,7 +1015,7 @@ textarea:valid ~ label {
   .about-section{
     height: 66rem;
   }
-
+ 
 } 
  
 @media screen and (max-width: 413px) {
@@ -1037,6 +1048,15 @@ textarea:valid ~ label {
 }
 
 @media screen and (max-width: 375px) {
+  .logo img{
+    height: 60px;
+    cursor: pointer;
+  }
+
+  .logo {
+    margin-left: 0px;
+  }
+
   .about-section{
     height: 73rem;
   }
@@ -1060,6 +1080,13 @@ textarea:valid ~ label {
 }
 
 @media screen and (max-width: 323px) {
+  .logo img{
+    height: 50px;
+  }
+  .logo {
+    margin-left: -30px;
+  }
+
   .about-section{
     height: 78.5rem;
   }
