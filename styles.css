@@ -137,7 +137,6 @@ body{
 }
 
 /************About Us.**********/
-
 .sect-text {
   margin-top: 110px;
 }
@@ -325,9 +324,6 @@ body{
   margin-top: 8px;
 }
 
-
-
-
 /******************Our Services*********************/
 .serv-content {
   width: 100%;
@@ -431,42 +427,6 @@ body{
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-/* About Container Styles */
-.about_container {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.about_container h1 {
-  color: green;
-  font-size: 35px;
-}
-
-.about_content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-  padding: 10px 10%;
-}
-
-.about_content img {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.about_text {
-  width: 100%;
-  border: 1px solid black;
-}
-
-.about_text p {
-  width: 100%;
 }
 
 /* Service Section Styles */
@@ -775,7 +735,7 @@ textarea:valid ~ label {
     background-color: #008a20;
     position: fixed;
     top: 110px;
-    right: 0px;
+    right: 20px;
     padding: 0;
     margin: 0;
     transition: 0.5s;
@@ -788,6 +748,7 @@ textarea:valid ~ label {
     display: none;
     margin: 25px;
   }
+  
  .nav-links .fas{
     position: absolute;
     top: 25px;
@@ -876,7 +837,9 @@ textarea:valid ~ label {
 }
 
   /*Gallary*/
-  
+  .sub-content{
+    height: 350px;
+  }
 
   /****contact****/
   .cont-content {
@@ -944,6 +907,15 @@ textarea:valid ~ label {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 617px){
+  .sub-content h2{
+    font-size: 40px;
+  }
+  .sub-content{
+    height: 350px;
+  }
+}
+
 @media screen and (max-width: 580px){
   .logo {
     margin-left: -0px;
@@ -967,6 +939,12 @@ textarea:valid ~ label {
 @media screen and (max-width: 491px) {
   .about-section{
     height: 61rem;
+  }
+  .sub-content{
+    height: 350px;
+  }
+  .sub-content h2{
+    font-size: 35px;
   }
 }
 
@@ -992,6 +970,9 @@ textarea:valid ~ label {
   .about-section{
     height: 62.5rem;
   }
+  .sub-content h2{
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 447px) {
@@ -1014,22 +995,32 @@ textarea:valid ~ label {
   .about-section{
     height: 66rem;
   }
- 
+  .sub-content{
+    height: 300px;
+  }
 } 
  
 @media screen and (max-width: 413px) {
   .about-section{
     height: 66rem;
   }
+  .logo {
+    margin-left: -15px;
+  }
+
 }
 @media screen and (max-width: 412px) {
   .about-section{
     height: 67.5rem;
   }
+
 }
 @media screen and (max-width: 403px) {
   .about-section{
     height: 69rem;
+  }
+  .sub-content{
+    height: 300px;
   }
 }
 
@@ -1053,12 +1044,16 @@ textarea:valid ~ label {
   }
 
   .logo {
-    margin-left: 0px;
+    margin-left: -20px;
   }
 
   .about-section{
     height: 73rem;
   }
+  .sub-content h2{
+    font-size: 25px;
+  }
+  
 }
 @media screen and (max-width: 363px) {
   .about-section{
