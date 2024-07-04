@@ -325,64 +325,59 @@ body{
   font-weight: 400;
   color: #008a20;
 }
+
 .cards-sect {
   margin-top: 40px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
 }
-.serv-cards {
-  width: 280px;
-  height: 260px;
-  display: block;
+
+.card {
+  height: 100%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   position: relative;
+  overflow: hidden;
 }
-.serv-cards img {
+
+.remove-when-use {
+  text-align: center;
+  position: relative;
+  color: black;
+}
+
+.remove-when-use img {
   width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 5px;
+  height: auto;
 }
-.img-overlay {
+
+.details {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  opacity: 1;
-  transition: 1s ease;
+  padding: 10px;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
 }
-.img-overlay:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+
+.card:hover .details {
+  transform: translateY(0);
 }
-.img-text {
-  color: white;
-  font-size: 30px;
-  font-weight: 500;
-  text-align: center;
-  padding: 20px;
-  transition: 1s ease;
+
+.details > p {
+  font-size: 0.8em;
+  margin-top: 0.5em;
 }
-.cards2-sect {
-  margin-top: 80px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+.details > label {
+  font-weight: bold;
 }
-.cards3-sect {
-  margin-top: 80px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
+
 
 /******************Gallary*********************/
 .sub-content {
