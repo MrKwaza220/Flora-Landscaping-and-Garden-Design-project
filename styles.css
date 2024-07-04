@@ -177,10 +177,12 @@ body{
   width: 100%;
   height: 400px;
   margin-top: 30px;
+  padding: 5px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .infor img {
   height: 300px;
   background-repeat: no-repeat;
@@ -189,6 +191,7 @@ body{
   margin: 90px 0 0 80px;
   border-radius: 10px;
 }
+
 .infor-text {
   height: 300px;
   margin: 90px 80px 0 50px;
@@ -217,7 +220,8 @@ body{
 
 /**********What we do*********/
 .service-section {
-  margin-top: 110px
+  margin-top: 110px;
+  padding: 0 20px;
 }
 .serv-header h1 {
   font-size: 34px;
@@ -227,53 +231,48 @@ body{
   margin-top: 50px;
   position: relative;
 }
-.serv-header h1::before {
+.serv-header h1::before, .serv-header h1::after {
   content: "";
   height: 2px;
-  width: 520px;
+  width: 40%;
   background-color: #008a20;
   display: block;
   position: absolute;
   top: 50%;
+}
+.serv-header h1::before {
   left: 0;
 }
 .serv-header h1::after {
-  content: "";
-  height: 2px;
-  width: 520px;
-  background-color: #008a20;
-  display: block;
-  position: absolute;
-  top: 50%;
   right: 0;
 }
 
-.planning {
-  padding: 40px;
+.planning, .implement, .maintanance {
+  padding: 40px 0;
 }
-.planning h1 {
+.planning h1, .implement h1, .maintanance h1 {
   font-size: 28px;
   font-weight: 700;
   color: black;
+  margin-bottom: 20px;
 }
+
 .cards-sect {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 .cards {
-  width: 250px;
-  height: 350px;
   background-color: white;
   padding: 10px;
   border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .cards img {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-radius: 5px;
 }
 .cards p {
   font-size: 14px;
@@ -287,40 +286,16 @@ body{
 .consult a {
   font-size: 14px;
   font-weight: 200;
-  margin-top: 10px;
 }
-.implement {
-  margin: 0 40px 0 40px;
-}
-.implement h1 {
-  font-size: 28px;
-  font-weight: 700;
-  color: black;
-}
-.implement ul {
+
+.implement ul, .maintanance ul {
   list-style: none;
-  margin-top: 15px;
+  padding-left: 0;
+  margin: 15px 0;
 }
-.implement ul li {
+.implement ul li, .maintanance ul li {
   font-size: 16px;
-  font-weight: 400px;
-  margin-top: 8px;
-}
-.maintanance {
-  margin: 40px 40px 0 40px;
-}
-.maintanance h1 {
-  font-size: 28px;
-  font-weight: 700;
-  color: black;
-}
-.maintanance ul {
-  list-style: none;
-  margin-top: 15px;
-}
-.maintanance ul li {
-  font-size: 16px;
-  font-weight: 400px;
+  font-weight: 400;
   margin-top: 8px;
 }
 
@@ -429,7 +404,6 @@ body{
   transform: translate(-50%, -50%);
 }
 
-/* Service Section Styles */
 .service-sect {
   padding: 60px;
 }
@@ -771,65 +745,53 @@ textarea:valid ~ label {
     cursor: pointer;
     margin-top: 10px;
   }
+  .infor {
+    flex-direction: column;
+    padding: 5px 5%;
+  }
+
+  /*About*/
+  .infor img {
+    width: 100px;
+    margin: 0;
+  }
+  
 }
 @media screen and (max-width: 768px) {
   /*Navigation*/
 
+
 /*about*/
-
-.about-section{
-  height: 54rem;
+.main-text {
+  padding: 0 20px;
 }
-.infor{
-  flex-direction: column;
-  width: 100%;
-  margin: 0;
-}
-
 .main-text h1 {
-  font-size: 22px;
+  font-size: 24px;
 }
-
 .main-text p {
-  font-size: 14px;
-}
-
-.top-sect {
-  height: 120px;
-  margin-top: 40px;
-}
-
-.top-sect h1 {
-  font-size: 32px;
-  padding-top: 10px;
-}
-
-.infor {
-  margin-top: 10px;
-  gap: 10px;
-}
-
-.infor img {
-  margin: 0;
-  border-radius: 10px;
-  width: 100%;
-}
-
-.infor-text {
-  margin-top: 10px;
-}
-
-.infor p {
-  font-size: 14px;
-}
-
-.infor-text .button {
   font-size: 18px;
 }
+.top-sect h1 {
+  font-size: 40px;
+  padding-top: 50px;
+}
+.infor {
+  flex-direction: column;
+  padding: 5px 5%;
+}
+.infor img {
+  width: 100%;
+  margin: 0;
+}
+.infor-text {
+  width: 90%;
+  margin: 20px 0;
+}
+
 
 /*What we do*/
-.cards, .card2, .card3 {
-  width: calc(100% - 20px);
+.cards{
+  width:100%;
 }
 
 .serv-header h1::before, .serv-header h1::after {
@@ -964,6 +926,26 @@ textarea:valid ~ label {
   .serv-header h1::before, .serv-header h1::after {
       width: 10%;
   }
+
+  /*About*/
+  .main-text h1 {
+    font-size: 20px;
+}
+.main-text p {
+    font-size: 16px;
+}
+.top-sect h1 {
+    font-size: 30px;
+    padding-top: 40px;
+}
+.infor img {
+    width: 100%;
+}
+.infor-text .button {
+    width: 200px;
+    font-size: 18px;
+}
+
 }
 
 @media screen and (max-width: 457px) {
