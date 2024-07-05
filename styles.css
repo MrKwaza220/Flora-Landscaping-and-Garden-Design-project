@@ -89,8 +89,9 @@ body{
 /* Main Content */
 .home-section {
   width: 100%;
+  align-content: center;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -100,9 +101,18 @@ body{
   color: white;
   text-align: center;
 }
-.home-section p {
+.home-section p{
+  font-size: 1.5rem; /* Adjust as needed */
+  line-height: 1.8;
+  margin-bottom: 30px;
+  padding: 40px;
+  color: white;
+  text-align: center;
+}
+
+/* .home-section p {
   width: 850px;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 400;
   text-align: center;
   color: white;
@@ -110,7 +120,8 @@ body{
   margin-right: auto;
   margin-top: 40px;
   line-height: 30px;
-}
+} */
+
 .home-section a {
   text-decoration: none;
 }
@@ -118,7 +129,7 @@ body{
   width: 170px;
   height: 50px;
   position: absolute;
-  top: 110%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 60px;
@@ -126,7 +137,7 @@ body{
   border: none;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   transition: 1s ease;
@@ -745,6 +756,11 @@ textarea:valid ~ label {
     flex-direction: column;
     padding: 5px 5%;
   }
+  /*Home*/
+  .home-section h1 {
+    font-size: 50px;
+    margin-top: 5%;
+  }
 
   /*About*/
   .infor img {
@@ -756,6 +772,20 @@ textarea:valid ~ label {
 @media screen and (max-width: 768px) {
   /*Navigation*/
 
+/*homepage*/
+.home-section p {
+  width: auto;
+  font-size: 1.2rem;
+}
+.home-section h1 {
+  font-size: 45px;
+  margin-top: 10%;
+}
+
+.btn {
+  width: 150px;
+  height: 45px;
+}
 
 /*about*/
 .main-text {
@@ -881,6 +911,13 @@ textarea:valid ~ label {
   }
 }
 
+@media screen and (max-width: 608px){
+  .home-section h1 {
+    font-size: 45px;
+    margin-top: 25%;
+  }
+  
+}
 @media screen and (max-width: 580px){
   .logo {
     margin-left: -0px;
@@ -897,6 +934,18 @@ textarea:valid ~ label {
 }
 
 @media screen and (max-width: 503px) {
+  /*home*/
+  .home-section h1 {
+    font-size: 40px;
+    margin-top: 20%;
+  }
+  .home-section p {
+    width: auto;
+    font-size: 1.0rem;
+    margin-top: 0px;
+  }
+
+  /*about*/
   .about-section{
     height: 60rem;
   }
@@ -978,6 +1027,7 @@ textarea:valid ~ label {
 
 
 @media screen and (width: 425px){
+
   .logo {
     margin-left: -10px;
   }
@@ -988,7 +1038,7 @@ textarea:valid ~ label {
     padding: 5px 5%;
   }
   .about-section{
-    height: 66rem;
+    height: 75rem;
   }
   .sub-content{
     height: 300px;
