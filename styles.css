@@ -371,7 +371,7 @@ body{
 
 .details > p {
   font-size: 0.8em;
-  margin-top: 0.5em;
+  margin-top: 0.0em;
 }
 
 .details > label {
@@ -792,7 +792,12 @@ textarea:valid ~ label {
 .serv-header h1::before, .serv-header h1::after {
   width: 25%;
 }
-
+.serv-content h2 {
+  font-size: 40px;
+}
+.service-sect h1 {
+  font-size: 20px;
+}
   /*Gallary*/
   .sub-content{
     height: 350px;
@@ -892,6 +897,13 @@ textarea:valid ~ label {
   .about-section{
     height: 60rem;
   }
+  /*Service*/
+  .serv-content h2 {
+    font-size: 37px;
+  }
+  .service-sect h1 {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 491px) {
   .about-section{
@@ -948,6 +960,9 @@ textarea:valid ~ label {
     height: 62.5rem;
   }
   .sub-content h2{
+    font-size: 30px;
+  }
+  .serv-content h2 {
     font-size: 30px;
   }
 }
@@ -1060,6 +1075,9 @@ textarea:valid ~ label {
 
   .about-section{
     height: 78.5rem;
+  }
+  .serv-content h2 {
+    font-size: 25px;
   }
 }
 
