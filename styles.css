@@ -348,11 +348,12 @@ body{
 
 .remove-when-use img {
   width: 100%;
+  height: 250px;
 }
 
 .details {
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #008a20;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -376,7 +377,6 @@ body{
 .details > label {
   font-weight: bold;
 }
-
 
 
 /******************Gallary*********************/
