@@ -187,7 +187,7 @@ body{
 }
 
 .infor {
-  min-height: 300px;
+  min-height: 250px;
   /* width: 100%; */
   margin-top: 30px;
   padding: 7px 7%;
@@ -227,6 +227,10 @@ body{
   text-decoration: underline;
   color: #008a20;
 }
+
+.infor-text p a:hover {
+  color: #34b351;
+}
 .infor-text .button {
   width: 150px;
   height: 50px;
@@ -260,7 +264,7 @@ body{
 .serv-header h1::before, .serv-header h1::after {
   content: "";
   height: 2px;
-  width: 40%;
+  width: 35%;
   background-color: #008a20;
   display: block;
   position: absolute;
