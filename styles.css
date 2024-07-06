@@ -681,50 +681,44 @@ textarea:valid ~ label {
 
 /***************Footer****************/
 .footer {
-  height: 120px;
-  width: 100%;
-  background: #008a20;
-  margin-top: 100px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 20px;
+  background-color: #008a20;
+  color: #fff;
 }
-.address {
-  font-size: 18px;
-  font-weight: 400;
-  color: white;
-  margin-left: 80px;
+
+.footer div {
+  flex: 1;
+  margin: 10px;
 }
-.call {
-  font-size: 18px;
-  font-weight: 400;
-  color: white;
-  margin-left: 100px;
+
+.address, .call, .follow, .copyright {
+  text-align: center;
 }
-.follow {
-  margin-right: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 100px;
-}
-.follow p {
-  font-size: 18px;
-  font-weight: 400;
-  color: white;
+.copyright a{
+  color:#e6eae6;
+  text-decoration: none;
 }
 .icons {
-  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
+
 .icons i {
-  font-size: 30px;
-  margin-left: 15px;
+  font-size: 23px;
   cursor: pointer;
+  transition: color 0.3s ease;
 }
+
 .icons i:hover {
-  transform: scale(1.1);
+  color: #0a631f;
 }
+
+
 
 /*Adjustments for small screens*/
 @media screen and (max-width: 1050px){
@@ -929,7 +923,7 @@ textarea:valid ~ label {
 .footer {
   height: auto;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 .footer-container{
   padding: 20px;
