@@ -175,6 +175,7 @@ body{
   background-repeat: no-repeat;
   position: relative;
   margin-top: 90px;
+  
 }
 .top-sect h1 {
   width: 100%;
@@ -183,7 +184,7 @@ body{
   font-weight: 700;
   color: white;
   text-align: center;
-  padding-top: 60px;
+  align-content: center;
 }
 
 .infor {
@@ -725,21 +726,22 @@ textarea:valid ~ label {
   .nav-links {
     display: none;
     flex-direction: column;
-    width: 40%;
+    width: 60%;
     background-color: #008a20;
     position: fixed;
     top: 110px;
-    right: 20px;
+    right: -30px;
     padding: 0;
     margin: 0;
     transition: 0.5s;
+    z-index: 1000;
   }
   .nav-links li {
     text-align: center;
     margin: 10px 0;
   }
   .nav-links li {
-    display: none;
+    display: block;
     margin: 25px;
   }
   
@@ -749,6 +751,7 @@ textarea:valid ~ label {
     left: 25px;
     cursor: pointer;
     color: #ccc;
+    z-index: 1100;
   }
  
   .fas{
@@ -765,6 +768,8 @@ textarea:valid ~ label {
     cursor: pointer;
     margin-top: 10px;
   }
+
+  /*About*/
   .infor {
     flex-direction: column;
     padding: 10px 10%;
