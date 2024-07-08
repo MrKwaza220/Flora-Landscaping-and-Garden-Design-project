@@ -744,8 +744,7 @@ textarea:valid ~ label {
     display: block;
     margin: 25px;
   }
-  
- .nav-links .fas{
+  .nav-links .fas{
     position: absolute;
     top: 25px;
     left: 25px;
@@ -753,7 +752,6 @@ textarea:valid ~ label {
     color: #ccc;
     z-index: 1100;
   }
- 
   .fas{
     display: block;
     color: white;
@@ -764,7 +762,6 @@ textarea:valid ~ label {
     font-size: 40px;
   }
  .nav-links i {
-    display: block;
     cursor: pointer;
     margin-top: 10px;
   }
@@ -809,7 +806,7 @@ textarea:valid ~ label {
 }
 
 @media screen and (max-width: 768px) {
-  /*Navigation*/
+/*Navigation*/
 
 /*homepage*/
 .home-section p {
@@ -820,7 +817,6 @@ textarea:valid ~ label {
   font-size: 45px;
   margin-top: 10%;
 }
-
 .btn {
   width: 150px;
   height: 45px;

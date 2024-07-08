@@ -25,7 +25,7 @@
                       <li><a href="services.html">Services</a></li>
                       <li><a href="gallery.html">Our Gallery</a></li>
                       <li><a href="contacts.html">Contacts</a></li>
-                      <!-- <i class="fas fa-times"></i> -->
+                      <i class="fas fa-times"></i>
                     </ul>
                       <i class="fas fa-bars" id="menu-icon"></i>
                   </div>
@@ -91,27 +91,5 @@
         </div>
 
     <script src="script.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          const menuIcon = document.getElementById('menu-icon');
-          const navbar = document.getElementById('navbar');
-          const closeIcon = document.querySelector(".fas.fa-times");
-          const navigationLinks = document.querySelectorAll('.nav-links a');
-      
-          menuIcon.addEventListener('click', function () {
-            navbar.classList.toggle('responsive');
-          });
-      
-          closeIcon.addEventListener('click', function () {
-            navbar.classList.remove('responsive');
-          });
-      
-          navigationLinks.forEach(link => {
-            link.addEventListener('click', function () {
-              navbar.classList.remove('responsive');
-            });
-          });
-        });
-      </script>
 </body>
 </html>
