@@ -8,6 +8,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const navigationLinks = document.querySelectorAll(".nav-links a");
 
   //Navigation links
+  let navlist = document.getElementById("navlist");
+
+  function openmenu() {
+    navlist.style.right = "0";
+  }
+  function closemenu() {
+    navlist.style.right = "-200px";
+  }
 
   //input
   inputs.forEach((input) => {
