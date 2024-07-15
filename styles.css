@@ -99,10 +99,10 @@ body {
   text-align: center;
 }
 .home-section p {
-  font-size: 1.5rem; /* Adjust as needed */
+  font-size: 1.4rem; /* Adjust as needed */
   line-height: 1.8;
   margin-bottom: 30px;
-  padding: 40px;
+  padding: 40px 80px;
   color: white;
   text-align: center;
 }
@@ -361,10 +361,10 @@ body {
 }
 
 .cards-sect {
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+  margin: 40px 0 60px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card {
@@ -689,6 +689,7 @@ textarea:valid ~ label {
   padding: 20px;
   background-color: #008a20;
   color: #fff;
+  margin-top: 70px;
 }
 
 .footer div {
@@ -731,10 +732,10 @@ nav .fas {
     padding: 0 40px;
   }
   .nav ul {
-    background-color: #008a20;
+    background-color: #1e7031;
     position: fixed;
-    top: 0;
-    right: -200px;
+    top: 110px;
+    right: 0;
     width: 200px;
     height: 400px;
     flex-direction: column;
