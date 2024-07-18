@@ -679,59 +679,7 @@ nav .fas {
 
 /*Adjustments for small screens*/
 @media screen and (max-width: 1050px) {
-  .nav {
-    padding: 0 40px;
-  }
-  .nav ul {
-    background-color: #1e7031;
-    position: fixed;
-    top: 110px;
-    right: 0px;
-    padding: 0;
-    margin: 0;
-    transition: 0.5s;
-    z-index: 1000;
-  }
-
-  .nav-links li {
-    text-align: center;
-    margin: 10px 0;
-  }
-
-  .nav-links li {
-    /* display: block; */
-    margin: 25px;
-  }
-
-  .nav-links .fas {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: pointer;
-    color: #ccc;
-    z-index: 1100;
-  }
-  .fas {
-    display: block;
-    color: white;
-    font-size: 25px;
-  }
-
-  .nav .fas.fa-bars {
-    display: block;
-    font-size: 40px;
-    cursor: pointer;
-  }
-  .nav-links i {
-    cursor: pointer;
-    margin-top: 10px;
-  }
-
-  .nav-links.responsive {
-    display: flex;
-    right: 0;
-  }
-
+  
   /*About*/
   .infor {
     flex-direction: column;
