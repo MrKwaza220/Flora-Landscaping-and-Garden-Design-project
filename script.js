@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".nav-links");
   const inputs = document.querySelectorAll("input");
   const textArea = document.querySelectorAll("textarea");
-  const menuIcon = document.querySelector(".menu-icon");
+  const menuIcon = document.getElementById("menu-icon");
   const navbar = document.getElementById("navbar");
-  const closeIcon = document.querySelector(".fas.fa-times");
+  const closeIcon = document.getElementById("close-icon");
   const navigationLinks = document.querySelectorAll(".nav-links a");
 
   //Navigation links
@@ -50,13 +50,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  menuIcon.addEventListener("click", function () {
-    navbar.classList.toggle("responsive");
-  });
+  if (menuIcon) {
+    menuIcon.addEventListener("click", function () {
+      navbar.classList.toggle("responsive");
+    });
+  }
 
-  closeIcon.addEventListener("click", function () {
-    navbar.classList.remove("responsive");
-  });
+  if (closeIcon) {
+    closeIcon.addEventListener("click", function () {
+      navbar.classList.remove("responsive");
+    });
+  }
 
   navigationLinks.forEach((link) => {
     link.addEventListener("click", function () {

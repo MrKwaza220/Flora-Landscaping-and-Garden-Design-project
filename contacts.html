@@ -1,95 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <title>Flora Landscape & Garden Design</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<!---->
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navigation.css">
+  </head>
+  <body>
     <div class="contact-page">
-        <div class="container">
-            <div class="sub-content" >
-                <!-----------------------Navbar-------------------------->
-                <div class="nav">
-                    <div class="logo">
-                      <a href="index.html">
-                        <img src="images/Logo/flora logo.png" alt="flora logo" />
-                      </a>
-                    </div>
-                    <ul class="nav-links" id="navbar">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="about.html">About Us</a></li>
-                      <li><a href="services.html">Services</a></li>
-                      <li><a href="gallery.html">Our Gallery</a></li>
-                      <li><a href="contacts.html">Contacts</a></li>
-                      <i class="fas fa-times"></i>
-                    </ul>
-                      <i class="fas fa-bars" id="menu-icon"></i>
-                  </div>
-                <h2>Contacts</h2>
-                
-            </div>
-            <!-----------------------Contacts-------------------------->
-            <div class="contact_container">
-            
-                <div class="contact_image">
-                    <img src="images/About.webp" alt="Contact Us Image">
-                </div>
-                <div class="contact_form">
-                    <h2>Fill the form</h2>
-                    <form class="inp-form">
-                        <div class="form_group">
-                            <label for="fullname">Full Name</label>
-                            <input type="text" id="fullname" name="fullname" required>
-                        </div>
-                        <div class="form_group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email">
-                        </div>
-                        <div class="form_group">
-                            <label for="phonenumber">Phone Number</label>
-                            <input type="tel" id="phonenumber" name="phonenumber" required>
-                        </div>
-                        <div class="form_group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form_group form_textarea">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <div class="form_group">
-                            <button type="submit">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            
+      <div class="container">
+        <div class="sub-content">
+          <!-----------------------Navbar-------------------------->
+          <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo"><img src="images/Logo/flora logo.png" alt="flora logo" /></label>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="gallery.html">Our Gallery</a></li>
+              <li><a href="contacts.html">Contact</a></li>
+            </ul>
+          </nav>
+          </div>
+        <!-----------------------Contacts-------------------------->
+        <div class="contact_container">
+          <div class="contact_image">
+            <img src="images/About.webp" alt="Contact Us Image" />
+          </div>
+          <div class="contact_form">
+            <h2>Fill the form</h2>
+            <form class="inp-form" action="" method="">
+              <div class="form_group">
+                <label for="fullname"></label>
+                <input type="text" id="fullname" name="fullname" placeholder="FullName" required />
+              </div>
+              <div class="form_group">
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email" required />
+              </div>
+              <div class="form_group">
+                <label for="subject"></label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required />
+              </div>
+              <div class="form_group form_textarea">
+                <label for="message"></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <div class="form_group">
+                <button type="submit" onclick="sendMail()" name="submitContact" >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
 
-
-        <!-----------------------Footer-------------------------->
-        <div class="footer">
-            <div class="address">Location: Cape Town</div>
-            <div class="call">Call Us: 071 234 5678</div>
-            <div class="follow">
-                <p>Follow Us:</p>
-                <div class="icons">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                </div>
-            </div>
-            <div class="copyright">
-                <a href="">©Kwaza 2024. All rights reserved</a>
-              </div>
+    <!-----------------------Footer-------------------------->
+    <div class="footer">
+      <div class="address">Location: Cape Town</div>
+      <div class="call">Call Us: 071 234 5678</div>
+      <div class="follow">
+        <p>Follow Us:</p>
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
         </div>
+      </div>
+      <div class="copyright">
+        <a href="">©Kwaza 2024. All rights reserved</a>
+      </div>
+    </div>
 
     <script src="script.js"></script>
-</body>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("sT8Ij47YjEfVltTpq"); 
+    })();
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      let params = {
+        name: document.getElementById("fullname").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
+      };
+
+      emailjs.send("service_9esm2pg", "template_c61jpwb", params)
+        .then(function(response) {
+          console.log('SUCCESS!', response.status, response.text);
+          Swal.fire({
+            title: "Thank you!",
+            text: "Your message has been sent.",
+            icon: "success"
+          });
+          document.getElementById('contact-form').reset();
+        }, function(error) {
+          console.log('FAILED...', error);
+          Swal.fire({
+            title: "Error!",
+            text: "There was an error sending your message.",
+            icon: "error"
+          });
+        });
+    });
+  </script>
+  </body>
 </html>
