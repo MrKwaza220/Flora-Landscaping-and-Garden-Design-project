@@ -68,3 +68,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+let navlist = document.getElementById("navlist");
+
+function openmenu() {
+  navlist.style.right = "0";
+}
+function closemenu() {
+  navlist.style.right = "-200px";
+}
