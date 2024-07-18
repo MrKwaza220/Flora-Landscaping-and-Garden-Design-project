@@ -10,6 +10,7 @@
         "fuga",
         "fullname",
         "Gallary",
+        "jpwb",
         "Kwaza",
         "laborum",
         "Maintanance",
@@ -24,6 +25,7 @@
         "serv",
         "Simanga",
         "SMTPS",
-        "STARTTLS"
+        "STARTTLS",
+        "Swal"
     ]
 }

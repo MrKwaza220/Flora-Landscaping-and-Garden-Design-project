@@ -673,9 +673,6 @@ textarea:valid ~ label {
 .icons i:hover {
   color: #0a631f;
 }
-nav .fas {
-  display: none;
-}
 
 /*Adjustments for small screens*/
 @media screen and (max-width: 1050px) {
