@@ -54,6 +54,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
 }
 .home-section h1 {
   font-size: 58px;
@@ -62,15 +63,14 @@ body {
   text-align: center;
   align-content: center;
 }
-.home-section p{
-  font-size: 1.5rem; 
+.home-section p {
+  font-size: 1.5rem;
   line-height: 1.8;
   margin-bottom: 30px;
   padding: 40px 80px;
   color: white;
   text-align: center;
 }
-
 
 .home-section a {
   text-decoration: none;
@@ -676,7 +676,6 @@ textarea:valid ~ label {
 
 /*Adjustments for small screens*/
 @media screen and (max-width: 1050px) {
-  
   /*About*/
   .infor {
     flex-direction: column;
@@ -872,9 +871,7 @@ textarea:valid ~ label {
   .logo {
     margin-left: -0px;
   }
-
 }
-
 
 @media screen and (max-width: 503px) {
   /*home*/
@@ -888,7 +885,6 @@ textarea:valid ~ label {
     margin-top: 0px;
   }
 
- 
   .serv-content h2 {
     font-size: 37px;
   }
@@ -897,7 +893,6 @@ textarea:valid ~ label {
   }
 }
 @media screen and (max-width: 491px) {
-
   .sub-content {
     height: 350px;
   }
@@ -949,7 +944,6 @@ textarea:valid ~ label {
 }
 
 @media screen and (max-width: 457px) {
- 
   .sub-content h2 {
     font-size: 30px;
   }
@@ -959,13 +953,9 @@ textarea:valid ~ label {
 }
 
 @media screen and (max-width: 447px) {
-
 }
 
 @media screen and (width: 425px) {
-  .logo {
-    margin-left: -10px;
-  }
   .infor {
     flex-direction: column;
     width: 100%;
@@ -979,21 +969,16 @@ textarea:valid ~ label {
 }
 
 @media screen and (max-width: 413px) {
-
   .logo {
     margin-left: -15px;
   }
 }
 
 @media screen and (max-width: 403px) {
-
   .sub-content {
     height: 300px;
   }
 }
-
-
-
 
 @media screen and (max-width: 375px) {
   .logo img {
@@ -1002,22 +987,21 @@ textarea:valid ~ label {
   }
 
   .logo {
-    margin-left: -20px;
+    margin-left: 0px;
   }
 
- 
   .sub-content h2 {
     font-size: 25px;
   }
 }
 
-
 @media screen and (max-width: 323px) {
+  .btn{
+    top: 85%;
+  }
+  
   .logo img {
     height: 50px;
-  }
-  .logo {
-    margin-left: -30px;
   }
 
   .serv-content h2 {
@@ -1025,3 +1009,8 @@ textarea:valid ~ label {
   }
 }
 
+@media screen and (max-width: 300px){
+  home-section p {
+    font-size: 1.0rem;
+  }
+}
