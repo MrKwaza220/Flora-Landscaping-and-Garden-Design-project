@@ -439,6 +439,7 @@ body {
   text-align: center;
   padding: 20px;
 }
+
 /*modal*********/
 .modal {
   display: none;
@@ -471,7 +472,6 @@ body {
 }
 
 /***************Contacts****************/
-
 .cont-content {
   width: 100%;
   height: 400px;
@@ -633,46 +633,89 @@ textarea:valid ~ label {
 
 /***************Footer****************/
 .footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
   background-color: #008a20;
   color: #fff;
-  margin-top: 70px;
-}
-
-.footer div {
-  flex: 1;
-  margin: 10px;
-}
-
-.address,
-.call,
-.follow,
-.copyright {
+  padding: 5px 5%;
   text-align: center;
 }
-.copyright a {
-  color: #e6eae6;
-  text-decoration: none;
+
+.footer .bottom_footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
-.icons {
+.browser a{
+  color: white;
+}
+
+.footer .bottom_footer > div {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer .address,
+.footer .call,
+.footer .follow {
+  text-align: center;
+}
+
+.footer .follow p {
+  margin-bottom: 10px;
+}
+
+.footer .icons {
   display: flex;
   justify-content: center;
   gap: 15px;
 }
 
-.icons i {
+.footer .icons i {
   font-size: 23px;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
-.icons i:hover {
+.footer .icons i:hover {
   color: #0a631f;
 }
+
+.footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.footer .copyright a {
+  color: #e6eae6;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer .copyright::before,
+.footer .copyright::after {
+  content: "";
+  height: 2px;
+  width: 35%;
+  background-color: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer .copyright::before {
+  left: 0;
+}
+
+.footer .copyright::after {
+  right: 0;
+}
+
+
 
 /*Adjustments for small screens*/
 @media screen and (max-width: 1050px) {
