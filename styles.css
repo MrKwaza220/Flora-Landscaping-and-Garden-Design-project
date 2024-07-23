@@ -198,7 +198,7 @@ body {
 
 /**********What we do*********/
 .service-section {
-  margin-top: 110px;
+  margin-top: 120px;
   padding: 5px 5%;
 }
 .serv-header h1 {
@@ -229,7 +229,7 @@ body {
 .planning,
 .implement,
 .maintanance {
-  padding: 40px 0;
+  padding: 10px 0;
 }
 .planning h1,
 .implement h1,
@@ -698,7 +698,7 @@ textarea:valid ~ label {
 .footer .copyright::before,
 .footer .copyright::after {
   content: "";
-  height: 2px;
+  height: 1px;
   width: 35%;
   background-color: white;
   display: block;
@@ -729,6 +729,11 @@ textarea:valid ~ label {
     font-size: 50px;
     margin-top: 5%;
   }
+
+  .footer .copyright::before,
+  .footer .copyright::after {
+    width: 20%;
+  }
 }
 
 @media (max-width: 1260px) and (min-width: 769px) {
@@ -752,6 +757,10 @@ textarea:valid ~ label {
   .infor-text p {
     width: 90%;
     margin: 0 auto;
+  }
+  .footer .copyright::before,
+  .footer .copyright::after {
+    width: 25%;
   }
 }
 
@@ -779,7 +788,7 @@ textarea:valid ~ label {
     font-size: 24px;
   }
   .main-text p {
-    font-size: 18px;
+    font-size: 1.1rem;
   }
   .top-sect h1 {
     font-size: 40px;
@@ -892,6 +901,11 @@ textarea:valid ~ label {
   .icons {
     margin-top: 10px;
   }
+
+  .footer .copyright::before,
+  .footer .copyright::after {
+    width: 20%;
+  }
 }
 
 @media screen and (max-width: 617px) {
@@ -916,6 +930,30 @@ textarea:valid ~ label {
 @media screen and (max-width: 580px) {
   .logo {
     margin-left: -0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer .bottom_footer {
+    flex-direction: column;
+  }
+
+  .footer .bottom_footer > div {
+    flex: none;
+    margin: 10px 0;
+  }
+
+  .footer .icons {
+    flex-wrap: wrap;
+  }
+
+  .footer .icons i {
+    font-size: 20px;
+  }
+
+  .footer .copyright::before,
+  .footer .copyright::after {
+    width: 10%;
   }
 }
 
@@ -974,7 +1012,7 @@ textarea:valid ~ label {
     font-size: 20px;
   }
   .main-text p {
-    font-size: 16px;
+    font-size: 12px;
   }
   .top-sect h1 {
     font-size: 30px;
