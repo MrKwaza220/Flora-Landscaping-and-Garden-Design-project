@@ -287,7 +287,7 @@ body {
 /******************Our Services*********************/
 .serv-content {
   width: 100%;
-  height: 500px;
+  height: 300px;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url(./images/Garden-edging-ideas-with-curved-garden-edging-and-rock-garden.jpg);
   background-size: cover;
@@ -298,6 +298,7 @@ body {
 .serv-content h2 {
   font-size: 50px;
   position: absolute;
+  align-content: center;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -366,7 +367,7 @@ body {
 /******************Gallary*********************/
 .sub-content {
   width: 100%;
-  height: 500px;
+  height: 400px;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url(./images/back.jpg);
   background-size: cover;
@@ -378,6 +379,7 @@ body {
 .sub-content h2 {
   font-size: 50px;
   position: absolute;
+  align-content: center;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
