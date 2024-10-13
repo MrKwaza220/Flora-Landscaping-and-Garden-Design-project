@@ -288,9 +288,9 @@ body {
 
 .serv-content {
   width: 100%;
-  height: 300px;
+  height: 400px;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(./images/Garden-edging-ideas-with-curved-garden-edging-and-rock-garden.jpg);
+    url(./images/back.jpg);
   background-size: cover;
   background-position: center;
   color: white;
